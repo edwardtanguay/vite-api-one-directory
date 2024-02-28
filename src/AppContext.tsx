@@ -1,7 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import {
-	IAppData
-} from "./shared/interfaces";
+import { IAppData } from "./shared/interfaces";
 import axios from "axios";
 
 interface IAppContext {
@@ -25,12 +23,12 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			const _appData = response.data;
 			setAppData(_appData);
 		})();
-	},[])
+	}, []);
 
 	return (
 		<AppContext.Provider
 			value={{
-				appData
+				appData,
 			}}
 		>
 			{children}
