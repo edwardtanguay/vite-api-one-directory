@@ -1,13 +1,14 @@
-import { useContext } from "react"
-import { AppContext } from "../AppContext"
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 
 export const PageWelcome = () => {
-	const { siteEnvironment } = useContext(AppContext)
+	const { appData } = useContext(AppContext);
 
 	return (
 		<>
-		<p>This is the welcome page.</p>
-			<p>Site is running in <b>{siteEnvironment}</b> mode.</p>
+			<p>
+				Site is running in <b>{appData.siteEnvironment}</b> mode.
+			</p>
 		</>
-	)
-}
+	);
+};
