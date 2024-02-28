@@ -11,3 +11,7 @@ export interface IAppData {
 	flashcards: IFlashcard[],
 	siteEnvironment: ISiteEnvironment
 }
+
+export interface IDb {
+	flashcards: IFlashcard[]
+}

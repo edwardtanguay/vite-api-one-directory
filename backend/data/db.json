@@ -1,3 +1,9 @@
 {
-	"flashcards": []
+	"flashcards": [
+		{
+			"id": 1,
+			"front": "the house",
+			"back": "das Haus"
+		}
+	]
 }
