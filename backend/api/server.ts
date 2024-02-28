@@ -6,7 +6,18 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
+	res.send(`
+<h1>Vite API - One Directory</h1>	
+
+<ul>
+	<li><a href="/appdata">/appdata</a></li>
+</ul>
+	`)
+});
+
+app.get('/appdata', (req, res) => {
 	res.json({
-		applicationName: "Vite/API One Directory"
+		flashcards: [],
+		siteEnvironment: 'development'
 	})
 });
