@@ -5,11 +5,16 @@ export interface IFlashcard {
 	back: string;
 }
 
-export type ISiteEnvironment = "development" | "production";
+export type ISiteEnvironment = "normal" | "debug";
 
 export interface IAppData {
 	flashcards: IFlashcard[],
 	siteEnvironment: ISiteEnvironment
+}
+
+export const initialAppData:IAppData = {
+	flashcards: [],
+	siteEnvironment: 'normal'
 }
 
 export interface IDb {

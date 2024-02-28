@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { IAppData } from "./shared/interfaces";
+import { IAppData, initialAppData } from "./shared/interfaces";
 import axios from "axios";
 
 interface IAppContext {
@@ -15,7 +15,7 @@ const backendUrl = "http://localhost:4206";
 export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
-	const [appData, setAppData] = useState<IAppData>({} as IAppData);
+	const [appData, setAppData] = useState<IAppData>(initialAppData);
 
 	useEffect(() => {
 		(async () => {

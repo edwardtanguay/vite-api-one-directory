@@ -20,6 +20,6 @@ app.get('/appdata', (req, res) => {
 	const db:IDb= tools.getJsonFromFile('./backend/data/db.json');
 	res.json({
 		flashcards: db.flashcards,
-		siteEnvironment: 'development'
+		siteEnvironment: 'normal'
 	})
 });

@@ -1,6 +1,6 @@
 - x minimize
-- change to appData
-- add json-server
+- x change to appData
+- .. add json-server
 - show three links
 
 - get siteEnvironment from .env
