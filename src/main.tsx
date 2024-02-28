@@ -10,9 +10,8 @@ import { PageWelcome } from "./pages/PageWelcome.tsx";
 import { PageAbout } from "./pages/PageAbout.tsx";
 import { Page404 } from "./pages/Page404.tsx";
 import { AppProvider } from "./AppContext.tsx";
-import { PageManageFlashcards } from "./pages/PageManageFlashcards.tsx";
 import { ISiteEnvironment } from "./shared/interfaces.ts";
-import { PageFlashcards } from "./pages/PageFlashcards.tsx";
+import { PageInfo } from "./pages/PageInfo.tsx";
 
 const siteEnvironment: ISiteEnvironment = import.meta.env.VITE_ENV;
 
@@ -22,12 +21,8 @@ let children = [
 		element: <PageWelcome />,
 	},
 	{
-		path: "manage-flashcards",
-		element: <PageManageFlashcards />,
-	},
-	{
-		path: "flashcards",
-		element: <PageFlashcards />,
+		path: "info",
+		element: <PageInfo />,
 	},
 	{
 		path: "about",
