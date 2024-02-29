@@ -16,6 +16,36 @@
       "front": "the dog",
       "back": "der Hund",
       "id": 3
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 4
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 5
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 6
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 7
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 8
     }
   ]
 }

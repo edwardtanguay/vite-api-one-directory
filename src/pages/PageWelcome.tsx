@@ -1,14 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../AppContext";
 import axios from "axios";
 import * as config from "../shared/config";
 
 export const PageWelcome = () => {
-	const { appData } = useContext(AppContext);
+	const { appData, loadAppData } = useContext(AppContext);
+	const [ addingFlashcard, setAddingFlashcard ] = useState(false);
 
 	const handleAddFlashcard = () => {
 		(async () => {
+			setAddingFlashcard(true);
 			const headers = {
 				"Access-Control-Allow-Origin": "*",
 				"Content-Type": "application/json",
@@ -26,7 +28,8 @@ export const PageWelcome = () => {
 				);
 
 				if (response.status === 201) {
-					alert("ok");
+					setAddingFlashcard(false);
+					loadAppData();
 				} else {
 					console.log(`ERROR: ${response.status}`);
 				}
@@ -44,7 +47,8 @@ export const PageWelcome = () => {
 			<h2 className="text-xl mt-3">
 				Flashcards{" "}
 				<button
-					className="text-sm bg-slate-300 py-0 px-1 rounded"
+					className={`text-sm bg-slate-300 py-0 px-1 rounded ${addingFlashcard && 'opacity-50' }`}
+					disabled={addingFlashcard ? true: false}
 					onClick={handleAddFlashcard}
 				>
 					Add

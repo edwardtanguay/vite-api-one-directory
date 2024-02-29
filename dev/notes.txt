@@ -1,9 +1,9 @@
 - x minimize
 - x change to appData
 - x add json-server
-- .. show three links
-	- .. with clear
-- add button is disabled and refreshes data
-- put random in add text
+- x show three links
+	- x with clear
+- x add button is disabled and refreshes data
+- .. put random in add text
 
 - get siteEnvironment from .env
