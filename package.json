@@ -1,11 +1,11 @@
 {
-	"name": "et358-vite-react-site",
+	"name": "vite-api-one-directory",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "conc \"npm run jsonserver\" \"npm run api\" \"npm run frontend\"",
-		"jsonserver": "json-server --watch ./backend/data/db.json --port 4205",
+		"jsonserver": "json-server -w ./backend/data/db.json -p 4205 -s ./node_modules/json-server/public",
 		"api": "nodemon",
 		"frontend": "vite --port 4207 --open",
 		"build": "tsc && vitest --run && vite build",

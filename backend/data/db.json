@@ -1,9 +1,21 @@
 {
-	"flashcards": [
-		{
-			"id": 1,
-			"front": "the house",
-			"back": "das Haus"
-		}
-	]
+  "flashcards": [
+    {
+      "id": 1,
+      "front": "the house",
+      "back": "das Haus"
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 2
+    },
+    {
+      "category": "german",
+      "front": "the dog",
+      "back": "der Hund",
+      "id": 3
+    }
+  ]
 }

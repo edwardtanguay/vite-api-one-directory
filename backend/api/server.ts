@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 <h1>Vite API - One Directory</h1>	
 <ul>
 	<li><a href="/appdata">/appdata</a></li>
+	<li><a href="">/appdata</a></li>
 </ul>
 	`)
 });
