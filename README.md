@@ -17,7 +17,7 @@ If you want to put it online at e.g. Vercel, you will have to dynamically (.env 
 - Vite
 - React
 - React Router 6.4 with createBrowserRouter
-- nice TypeScript developer experience:
+- nice TypeScript developer experience
     - TypeScript on Frontend with Vite
     - TypeScript on backend with tsx and nodemon
 - json-server
