@@ -10,7 +10,7 @@ It is meant to be used as a local application that has a JSON-file database.
 
 If you want to put it online at e.g. Vercel, you will have to dynamically (.env file) disable any pages that use the backend while online.
 
-![infoappdemoksdjf](https://github.com/edwardtanguay/vite-api-one-directory/assets/446574/0ef5beb4-4a81-44cb-933a-80f2be8b5c85)
+![infoappdemoksdjf](https://github.com/edwardtanguay/vite-react-node-api-one-directory/assets/446574/0ef5beb4-4a81-44cb-933a-80f2be8b5c85)
 
 ## features
 
